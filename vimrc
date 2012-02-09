@@ -1,27 +1,26 @@
-#set the color scheme
+" set the color scheme
 :colorscheme torte
 
-#show numbers
+" set numbers alongside the lines
 set number
 
-#cocoastuff
-set folding
-set nocompat
+" set inremental search on
 set incsearch
-set virtualedit
 
+" make vim correctly indent lines
 set smartindent
 
-#set tab width
-set smartindent
+" make tabs only 4 wide
 set tabstop=4
 set shiftwidth=4
-set expandtab
 
-#for pathogen
+" turn on syntax highlighting
+syntax on
+
+" load the pathogen plugin
 call pathogen#infect()
 
-#hide the toolbar in macvim
+" turn the toolbar off in macvim
 if has("gui_running")
 	set guioptions=t
 endif
