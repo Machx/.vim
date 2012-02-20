@@ -1,6 +1,12 @@
 " set the color scheme
 :colorscheme torte
 
+" Make vim more useful
+set nocompatible
+
+" Don’t reset cursor to start of line when moving around.
+set nostartofline
+
 " set numbers alongside the lines
 set number
 
@@ -16,6 +22,12 @@ set shiftwidth=4
 
 " turn on syntax highlighting
 syntax on
+
+" dont wrap text
+set nowrap
+
+" set the list chars to the same as textmate
+set listchars=tab:▸\ ,eol:¬
 
 " load the pathogen plugin
 call pathogen#infect()
